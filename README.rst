@@ -12,6 +12,19 @@ Add the following to your ``.gitignore``::
 Git directions / compile from source::
 
     git submodule add https://github.com/doxygen/doxygen.git
+
+Ignore changes in the submodule by added ``ignore dirty`` to the bottom of ``.gitmodules``;
+``.gitmodules`` should look like::
+
+    [submodule "doxygen"]
+    path = doxygen
+    url = https://github.com/doxygen/doxygen.git
+    ignore = dirty
+
+
+
+Continue installation::
+
     cd doxygen
     mkdir build
     cmake -G "Unix Makefiles" ..
