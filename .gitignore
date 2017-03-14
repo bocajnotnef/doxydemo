@@ -2,3 +2,8 @@
 html/
 latex/
 doxygen/*
+env/
+xml/
+docs/_build
+docs/_templates
+docs/_static

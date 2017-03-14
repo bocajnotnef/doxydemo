@@ -1,5 +1,5 @@
 /** 
- * \file example1.cpp
+ * \file example1.h
  * \author Jake Fenton
  *
  *  This is a file containing example code for a doxygen demonstration

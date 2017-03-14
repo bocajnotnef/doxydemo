@@ -60,3 +60,35 @@ To run doxygen, call the binary and feed it the doxyfile::
 
 Doxygen will then dump html into the ``html/`` folder in the directory it was called from.
 Open ``html/index.html`` to view the documentation from Doxygen.
+
+
+Adding Breathe
+==============
+
+Make a virtual environment (you do use those, yeah?) and install the packages::
+
+    python3 -m venv env
+    source env/bin/activate
+    pip3 install sphinx breathe
+    mkdir docs
+
+
+Build initial sphinx config::
+
+    sphinx-quickstart
+
+Edit sphinx config
+
+Uncomment line 20 to actually ``import os``
+
+Around line 34::
+
+    extensions = [ 'breathe']
+
+    breathe_projects = {
+      "Example" : os.path.abspath(../xml)
+    }
+
+    breathe_default_project = "Example"
+
+
