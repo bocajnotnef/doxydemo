@@ -5,6 +5,7 @@ Installation
 Add the following to your ``.gitignore``::
     *.swp
     html/
+    xml/
     latex/
     doxygen/*
 
@@ -51,6 +52,17 @@ line 438.
 
 Also set ``EXTRACT_PRIVATE`` to ``YES``; it's near ``EXTRACT ALL``, around line 444.
 
+Set ``INPUT`` on line 793 to the folder where your source lives
+
+Set ``GENERATE_XML`` on line 1941 to ``YES``
+
+Note, the following only work if you have graphviz installed
+
+Set ``HAVE_DOT`` on line 2209 to ``YES``
+
+Set ``UML_LOOK`` on line 2275 to ``YES``
+
+Set ``TEMPLATE_RELATIONS`` on line 2296 to ``YES``
 
 Running
 =======
